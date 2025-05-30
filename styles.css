@@ -181,17 +181,19 @@ span {
 .form-group button{
     margin-left: 750px;
 }
-.fondo-f-cont{
+.fondo-f-cont {
   width: 100%;
   background-image: url('imagenes/footer-bg.png');
-  background-size: cover;       /* Escala la imagen para cubrir toda la sección */
-  background-repeat: repeat; 
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 500px;                /* Altura de la sección */
-  display: flex;
-  padding-bottom: 0px; 
   background-color: #f7f7f7;
+  height: 1000px;
+  margin-right: 250px;
 }
 
+.Contacto, footer {
+  background: transparent; /* ¡clave! no tapar el fondo */
+}
 
 
