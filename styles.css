@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 header {
@@ -181,19 +182,64 @@ span {
 .form-group button{
     margin-left: 750px;
 }
+
 .fondo-f-cont {
-  width: 100%;
-  background-image: url('imagenes/footer-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f7f7f7;
-  height: 1000px;
-  margin-right: 250px;
+  height: auto;
+
+}
+.curva-fondo{
+  background-color: #8341a2;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  clip-path: ellipse(80% 100% at 50% 100%);
+
+}
+.icono {
+  width: 30px;     /* o el tamaño que prefieras */
+  height: auto;    /* mantiene la proporción original */
+}
+.Contacto {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
 }
 
-.Contacto, footer {
-  background: transparent; /* ¡clave! no tapar el fondo */
+.Contacto .subrayado {
+  margin: 10px 0;
+}
+
+.Contacto p {
+  width: 40%;
+  margin: 0 auto 40px auto; /* centrado + espacio abajo */
+  line-height: 1.5;
+  color: white;
+}
+
+/* Contenedor flex para los datos de contacto */
+.Contacto .telefono, .Contacto .email {
+  flex: 1;
+  padding: 20px;
+}
+
+.Contacto .telefono h3, .Contacto .email h3 {
+  margin-top: 10px;
+  color: white;
+}
+
+/* Contenedor que agrupa ambos */
+.Contacto .datos-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* espacio entre teléfono y email */
+  flex-wrap: wrap; /* por si se achica mucho en móvil */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer{
+  background-color: red;
 }
 
 
