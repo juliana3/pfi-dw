@@ -238,8 +238,20 @@ span {
   margin: 0 auto;
 }
 
+.linea {
+  height: 2px;
+  background-color: white;
+  width: 80%;
+  margin: 50px auto;
+}
 footer{
-  background-color: red;
+  background-color: #8341a2;
+  color: white;
+  padding: 10px;
+
+}
+footer p{
+  text-align: center;;
 }
 
 
